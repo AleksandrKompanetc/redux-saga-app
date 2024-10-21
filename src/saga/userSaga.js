@@ -9,6 +9,6 @@ function* fetchUserWorker() {
   yield put(setUsers(json))
 }
 
-function* userWatcher() {
-  takeEvery(FETCH_USERS, fetchUserWorker)
+export function* userWatcher() {
+  yield takeEvery(FETCH_USERS, fetchUserWorker)
 }

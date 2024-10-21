@@ -1,5 +1,5 @@
 import React from 'react'
-import { incrementCreator, decrementCreator, asyncIncrementCreator, asyncDecrementCreator } from './store/countReducer'
+import { asyncIncrementCreator, asyncDecrementCreator } from './store/countReducer'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchUsers } from './store/userReducer'
 
